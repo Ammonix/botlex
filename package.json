@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "start": "node ./app/main.js"
+    },
+    "name": "botlex",
+    "version": "1.0.0",
+    "description": "AlexJs as a Discord Bot",
+    "main": "./app/main.js",
+    "author": "Ammonix",
+    "dependencies": {
+        "alex": "^5.0.0",
+        "discord.io": "^2.5.2"
+    }
+}
