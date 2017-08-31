@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "watch": "tsc -w",
-        "start": "node ./bin/bundle.js"
+        "watch": "tsc -w --pretty",
+        "start": "node ./bin/tsc.js"
     },
     "name": "botlex",
     "version": "1.0.0",

@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-    "module": "system",
     "sourceMap": true,
-    "outFile": "./bin/tsc.js",
+    "outDir": "./bin",
     "removeComments": true
+  },
+  "paths": {
+    "*": [
+      "./@types/*"
+    ]
   },
   "include": [
     "src/**/*"
