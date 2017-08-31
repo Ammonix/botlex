@@ -1,5 +1,15 @@
 {
-    "compilerOptions": {
-      "sourceMap": true
-    }
-  }
+  "compilerOptions": {
+    "module": "system",
+    "sourceMap": true,
+    "outFile": "./bin/tsc.js",
+    "removeComments": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
