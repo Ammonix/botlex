@@ -1,7 +1,7 @@
 {
     "scripts": {
-        "watch": "tsc -w --pretty",
-        "start": "node ./bin/tsc.js"
+        "compile": "tsc && node ./bin/main.js",
+        "dev": "nodemon -e ts  --exec \"npm run compile\""
     },
     "name": "botlex",
     "version": "1.0.0",
@@ -15,5 +15,7 @@
         "typescript": "^2.5.2",
         "winston": "^2.3.1"
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "nodemon": "^1.11.0"
+    }
 }

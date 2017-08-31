@@ -12,7 +12,7 @@ bot.on("ready", (evt) => {
     winston.info("Logged in as: ");
     winston.info(bot.username + " - (" + bot.id + ")");
 });
-bot.on("message", function (user, userID, channelID, message, evt) {
+bot.on("message", (user, userID, channelID, message, evt) => {
     if (userID !== bot.id) {
         const complaints = alex(message, null).messages;
         complaints.forEach((complaint) => {
@@ -23,4 +23,9 @@ bot.on("message", function (user, userID, channelID, message, evt) {
             });
         }, this);
     }
+});
+bot.on("disconnect", (errMsg, code) => {
+    winston.info("Disconnected");
+    if (errMsg) { winston.info("errMsg:" + errMsg); }
+    if (code) { winston.info("code:" + code); }
 });
