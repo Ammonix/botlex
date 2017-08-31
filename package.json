@@ -1,14 +1,19 @@
 {
     "scripts": {
-        "start": "node ./app/main.js"
+        "watch": "tsc -w",
+        "start": "node ./bin/bundle.js"
     },
     "name": "botlex",
     "version": "1.0.0",
     "description": "AlexJs as a Discord Bot",
-    "main": "./app/main.js",
+    "main": "./src/main.js",
     "author": "Ammonix",
     "dependencies": {
+        "@types/winston": "^2.3.5",
         "alex": "^5.0.0",
-        "discord.io": "^2.5.2"
-    }
+        "discord.io": "^2.5.2",
+        "typescript": "^2.5.2",
+        "winston": "^2.3.1"
+    },
+    "devDependencies": {}
 }
